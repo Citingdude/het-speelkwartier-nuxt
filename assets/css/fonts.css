@@ -47,3 +47,7 @@
   src: url("~/assets/fonts/Nunito-ExtraLight.woff") format("woff");
   font-weight: 200;
 }
+
+body {
+  font-family: 'Nunito', sans-serif;
+}
