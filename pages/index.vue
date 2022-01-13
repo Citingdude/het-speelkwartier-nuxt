@@ -1,6 +1,6 @@
 <template>
-  <div>
-    Homepage
+  <div id="p-home">
+    <PagesHomeHeroSection />
   </div>
 </template>
 
