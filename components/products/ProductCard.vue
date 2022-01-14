@@ -8,7 +8,7 @@
 
     <h3 class="text-2xl mb-4 font-semibold">{{ title }}</h3>
 
-    <ButtonsArrowButton />
+    <ButtonsArrowButton :link="`/products/${id}`" />
   </div>
 </template>
 
@@ -22,6 +22,10 @@ export default {
         image: {
             type: Object,
             default: {}
+        },
+        id: {
+            type: Number,
+            default: ""
         }
     },
 };

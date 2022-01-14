@@ -9,6 +9,7 @@
           :key="product.id"
           :title="product.name"
           :image="product.images[0]"
+          :id="product.id"
         />
       </div>
     </div>
