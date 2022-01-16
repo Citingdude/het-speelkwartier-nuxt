@@ -2,6 +2,7 @@
   <div id="p-home">
     <PagesHomeHeroSection />
     <PagesHomePopularSection :featuredProducts="featuredProducts" />
+    <NewsletterSection />
   </div>
 </template>
 
