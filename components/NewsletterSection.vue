@@ -1,5 +1,5 @@
 <template>
-  <section class="pb-20 relative">
+  <section class="pb-20 relative bg-light">
     <div class="container mx-auto bg-goldenrod p-12 rounded-3xl">
       <h2 class="text-5xl font-bold mb-4">
         Schrijf je in voor onze nieuwsbrief
