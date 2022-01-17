@@ -3,7 +3,7 @@
     <div class="container mx-auto flex items-center justify-between">
       <div>
         <img
-          width="96"
+          width="126"
           src="~/assets/images/logo.svg"
           alt="Logo Het Speelkwartier"
         />
