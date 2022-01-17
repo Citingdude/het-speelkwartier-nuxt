@@ -9,7 +9,7 @@
         Blijf op de hoogte van de laatste nieuwtjes en gratis producten
       </p>
 
-      <form v-on:submit.prevent="sendForm()" class="max-w-lg" method="post">
+      <form v-on:submit.prevent="sendForm()" class="max-w-lg relative z-10" method="post">
         <div class="flex flex-col mb-8">
           <label class="mb-2" for="email">E-mailadres</label>
           <input
