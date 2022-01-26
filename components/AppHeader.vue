@@ -1,13 +1,13 @@
 <template>
   <header class="py-4 px-12 bg-white">
     <div class="container mx-auto flex items-center justify-between">
-      <div>
+      <NuxtLink to="/">
         <img
           width="126"
           src="~/assets/images/logo.svg"
           alt="Logo Het Speelkwartier"
         />
-      </div>
+      </NuxtLink>
 
       <nav class="hidden md:flex space-x-12 text-dark text-lg font-medium">
         <NuxtLink to="/">Home</NuxtLink>
