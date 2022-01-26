@@ -6,6 +6,10 @@
       class="mb-4 rounded-2xl max-h-72 h-full w-full object-cover"
     />
 
+    <p class="text-accent font-light mb-2">
+      {{ category }}
+    </p>
+
     <h3 class="text-2xl mb-4 font-semibold">{{ title }}</h3>
 
     <ButtonsArrowButton :link="`/products/${id}`" />
@@ -26,6 +30,10 @@ export default {
         id: {
             type: Number,
             default: ""
+        },
+        category: {
+          type: String,
+          default: ""
         }
     },
 };
