@@ -11,7 +11,7 @@
 
       <nav class="hidden md:flex space-x-12 text-dark text-lg font-medium">
         <NuxtLink to="/">Home</NuxtLink>
-        <NuxtLink to="/">Shop</NuxtLink>
+        <NuxtLink to="/shop">Shop</NuxtLink>
         <NuxtLink to="/">Werking</NuxtLink>
         <NuxtLink to="/">Contact</NuxtLink>
       </nav>
@@ -36,7 +36,7 @@
 
       <nav v-show="mobileMenu" class="absolute w-10/12 h-full bg-gray-100 left-0 top-0 flex flex-col">
         <NuxtLink to="/">Home</NuxtLink>
-        <NuxtLink to="/">Shop</NuxtLink>
+        <NuxtLink to="/shop">Shop</NuxtLink>
         <NuxtLink to="/">Werking</NuxtLink>
         <NuxtLink to="/">Contact</NuxtLink>
       </nav>
