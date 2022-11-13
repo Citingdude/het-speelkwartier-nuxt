@@ -1,8 +1,8 @@
 <template>
   <div id="p-home">
     <PagesHomeHero />
-    <!-- <PagesHomePopularSection :featuredProducts="featuredProducts" /> -->
-    <!-- <NewsletterSection /> -->
+    <PagesHomeFeatured :featuredProducts="featuredProducts" />
+    <PagesHomeNewsletter/>
   </div>
 </template>
 
