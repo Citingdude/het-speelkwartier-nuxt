@@ -1,3 +1,19 @@
+<script setup lang="ts">
+const formData = {
+  title: 'Test',
+  status: 'publish',
+  meta_box: {
+    subscribe_email: '',
+  },
+}
+
+async function sendForm() {
+  await useFetch('https://hetspeelkwartier.be/wp-json/wp/v2/forms', {
+    body: formData,
+  })
+}
+</script>
+
 <template>
   <section class="pb-20 relative bg-light">
     <div class="container mx-auto bg-goldenrod p-12 rounded-3xl">
@@ -9,10 +25,11 @@
         Blijf op de hoogte van de laatste nieuwtjes en gratis producten
       </p>
 
-      <form v-on:submit.prevent="sendForm()" class="max-w-lg relative z-10" method="post">
+      <form class="max-w-lg relative z-10" method="post" @submit.prevent="sendForm()">
         <div class="flex flex-col mb-8">
           <label class="mb-2" for="email">E-mailadres</label>
           <input
+            id="email"
             v-model="formData.meta_box.subscribe_email"
             class="
               py-2
@@ -24,8 +41,7 @@
             "
             type="email"
             name="email"
-            id="email"
-          />
+          >
         </div>
 
         <button
@@ -42,19 +58,3 @@
     </div>
   </section>
 </template>
-
-<script setup lang="ts">
-const formData = {
-  title: 'Test',
-  status: 'publish',
-  meta_box: {
-    subscribe_email: ''
-  }
-}
-
-async function sendForm() {
-  await useFetch('https://hetspeelkwartier.be/wp-json/wp/v2/forms', {
-    body: formData
-  })
-}
-</script>

@@ -1,4 +1,4 @@
-<script>
+<script setup lang="ts">
 const mobileMenu = ref(false)
 </script>
 

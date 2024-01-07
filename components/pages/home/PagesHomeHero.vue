@@ -1,3 +1,6 @@
+<script setup lang=ts>
+</script>
+
 <template>
   <section id="home-hero" class="bg-light px-4 sm:px-8 lg:px-12 py-10 sm:py-20">
     <div class="container mx-auto grid lg:grid-cols-2 gap-12">
@@ -18,12 +21,10 @@
         </div>
       </div>
 
-      <img 
-        class="justify-self-center" 
-        src="/images/home-hero.png" alt="Knutselende kinderen" />
+      <img
+        class="justify-self-center"
+        src="/images/home-hero.png" alt="Knutselende kinderen"
+      >
     </div>
   </section>
 </template>
-
-<script setup lang=ts>
-</script>

@@ -1,11 +1,11 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-    runtimeConfig: {
+  runtimeConfig: {
     clientKey: '',
     secretKey: '',
     public: {
-      apiBase: ''
-    }
+      apiBase: '',
+    },
   },
   typescript: {
     shim: false,
