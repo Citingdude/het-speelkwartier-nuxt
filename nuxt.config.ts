@@ -1,8 +1,8 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   runtimeConfig: {
-    clientKey: '',
-    secretKey: '',
+    WOOCOMMERCE_USERNAME: '',
+    WOOCOMMERCE_PASSWORD: '',
     public: {
       apiBase: '',
     },
@@ -12,4 +12,7 @@ export default defineNuxtConfig({
   },
   modules: ['@nuxtjs/tailwindcss'],
   css: ['~/assets/css/main.css'],
+  experimental: {
+    typedPages: true,
+  },
 })
