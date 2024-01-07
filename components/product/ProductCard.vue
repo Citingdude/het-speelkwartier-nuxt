@@ -1,28 +1,31 @@
 <script setup lang="ts">
-defineProps({
-  title: String,
-  imageUrl: String,
-  id: Number,
-  category: String,
-})
+const props = defineProps<{
+  title: string
+  imageUrl: string
+  id: number
+  category?: string
+}>()
 </script>
 
 <template>
-  <div>
+  <NuxtLink
+    class="hover:-translate-y-2 transition"
+    :to="`/products/${props.id}`"
+  >
     <img
-      :src="imageUrl"
+      :src="props.imageUrl"
       alt=""
       class="mb-4 rounded-2xl max-h-72 h-full w-full object-cover"
     >
 
-    <p class="text-accent font-light mb-2">
-      {{ category }}
+    <p v-if="props.category" class="text-accent font-light mb-2">
+      {{ props.category }}
     </p>
 
     <h3 class="text-2xl mb-4 font-semibold">
-      {{ title }}
+      {{ props.title }}
     </h3>
 
-    <AppButtonArrow :to="`/products/${id}`" />
-  </div>
+    <AppButtonArrow is-button />
+  </NuxtLink>
 </template>

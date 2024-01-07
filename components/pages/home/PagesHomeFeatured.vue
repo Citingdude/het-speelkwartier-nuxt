@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import type Product from '~/types/product/product.type'
+
 interface Props {
   featuredProducts: any
 }
