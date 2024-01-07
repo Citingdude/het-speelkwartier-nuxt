@@ -1,18 +1,15 @@
 <script setup lang=ts>
-defineProps({
-  title: {
-    type: String,
-    default: 'Category',
-  },
-  color: {
-    type: String,
-    default: 'champagne',
-  },
-})
+type Color = 'champagne' | 'goldenrod'
+
+defineProps<{
+  title: string
+  color: Color
+}>()
 </script>
 
 <template>
-  <div
+  <NuxtLink
+    to="/shop"
     :class="{
       'bg-champagne': color === 'champagne',
       'bg-goldenrod': color === 'goldenrod',
@@ -23,8 +20,8 @@ defineProps({
       {{ title }}
     </p>
 
-    <AppButtonArrow />
-  </div>
+    <AppButtonArrow is-button />
+  </NuxtLink>
 </template>
 
 <style>
