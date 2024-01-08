@@ -5,8 +5,8 @@ export default defineEventHandler(async (event) => {
   const config = useRuntimeConfig()
 
   const baseURL = config.public.apiBase
-  const username = config.WOOCOMMERCE_USERNAME
-  const password = config.WOOCOMMERCE_PASSWORD
+  const username = config.WOOCOMMERCE_CLIENT_KEY
+  const password = config.WOOCOMMERCE_CLIENT_SECRET
 
   const headers: HeadersInit | Ref<HeadersInit | undefined> | undefined = {
     Authorization: `Basic ${Base64.encode(`${username}:${password}`)}`,

@@ -1,8 +1,8 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   runtimeConfig: {
-    WOOCOMMERCE_USERNAME: '',
-    WOOCOMMERCE_PASSWORD: '',
+    WOOCOMMERCE_CLIENT_KEY: '',
+    WOOCOMMERCE_CLIENT_SECRET: '',
     public: {
       apiBase: '',
     },
