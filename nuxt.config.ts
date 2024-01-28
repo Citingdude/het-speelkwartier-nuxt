@@ -15,4 +15,12 @@ export default defineNuxtConfig({
   experimental: {
     typedPages: true,
   },
+  routeRules: {
+    '/': {
+      swr: true,
+    },
+    '/**': {
+      swr: true,
+    },
+  },
 })
