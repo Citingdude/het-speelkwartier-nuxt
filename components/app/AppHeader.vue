@@ -3,7 +3,7 @@ const mobileMenu = ref(false)
 </script>
 
 <template>
-  <header class="py-4 px-12 bg-white">
+  <header class="py-4 bg-white">
     <div class="container mx-auto flex items-center justify-between">
       <NuxtLink to="/">
         <img
